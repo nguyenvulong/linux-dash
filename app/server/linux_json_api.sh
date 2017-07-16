@@ -2,7 +2,8 @@
 
 _parseAndPrint() {
   while read data; do
-    echo -n "$data" | sed -r "s/\"/\\\\\"/g" | tr -d "\n";
+    #echo -n "$data" | sed -r "s/\"/\\\\\"/g" | tr -d "\n";
+    echo $data
   done;
 }
 
